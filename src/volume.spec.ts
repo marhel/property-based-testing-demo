@@ -1,6 +1,8 @@
 import fc from 'fast-check'
 import { calculateSoundVolume } from './volume';
 
+// The calculateSoundVolume impl can be found in volume.ts
+
 describe('PBT Example', () => {
     it('volume should never be negative', () => {
         fc.assert(

@@ -1,6 +1,8 @@
 import fc from 'fast-check'
 import { BogoStack } from './bogostack'
 
+// The BogoStack itself can be found in bogostack.ts
+
 type Model = { num: number };
 
 class PushCommand implements fc.Command<Model, BogoStack> {
