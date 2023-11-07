@@ -10,16 +10,16 @@ describe('PBT Example', () => {
                 const volume = calculateSoundVolume(amp, pan, reverb);
                 expect(volume).toBeGreaterThanOrEqual(0);
             }),
-            { verbose: 0 });
+            { verbose: 1, seed: 659421825 });
     });
 
-    it('even with out-of-range inputs, volume should never be negative', () => {
+    it('even with out-of-range inputs, volume should still not be negative', () => {
         fc.assert(
             fc.property(fc.integer(), fc.integer(), fc.integer(), (amp, pan, reverb) => {
                 const volume = calculateSoundVolume(amp, pan, reverb);
                 expect(volume).toBeGreaterThanOrEqual(0);
             }),
-            { verbose: 0 });
+            { verbose: 1, seed: 659421825 });
     });
 
 });
