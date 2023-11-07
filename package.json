@@ -1,0 +1,20 @@
+{
+  "name": "orecheck",
+  "version": "1.0.0",
+  "description": "Trying out fast-check",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Hellspong",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node-lts": "^18.12.5",
+    "@types/jest": "^29.5.7",
+    "fast-check": "^3.13.2",
+    "jest": "^29.7.0",
+    "pure-rand": "^6.0.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
